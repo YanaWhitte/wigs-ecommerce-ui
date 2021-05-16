@@ -1,0 +1,86 @@
+.content {
+  margin-right: 52px;
+  margin-bottom: 64px;
+  display: grid;
+  grid-area: c;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 21px;
+  /* grid-auto-flow: dense; */
+  /* background-color: rgb(255, 240, 241); */
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.horizontalCard {
+  /* height: 180px; */
+  display: grid;
+  border-radius: 15px;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.vericalCard {
+  position: relative;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.discountCard {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #bce7f0 url(./../photos/img-1.png) no-repeat;
+  background-size: cover;
+}
+
+.summerCard {
+  background: #c3e9ff url(./../photos/img-2.png) no-repeat;
+  background-size: cover;
+}
+
+.trendingCard {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f4de4d url(./../photos/img-7.png) no-repeat;
+  background-size: cover;
+}
+
+.newInStoreCard {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #e9e5e2 url(./../photos/img-8.png) no-repeat;
+  background-size: cover;
+}
+
+.trendingCard h2,
+.newInStoreCard h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.trendingCard h2 {
+  color: #001aa2;
+}
+
+.newInStoreCard h2 {
+  color: #fd2e24;
+}
+
+.trendingCard p,
+.newInStoreCard p {
+  font-size: 15px;
+  margin: 0;
+}

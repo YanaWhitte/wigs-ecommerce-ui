@@ -1,0 +1,51 @@
+.header {
+  margin-right: 52px;
+  grid-area: h;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  margin-right: 17px;
+  cursor: pointer;
+}
+
+.search input,
+.search input::placeholder {
+  font-family: "Circular Std";
+  font-weight: medium;
+  font-size: 17px;
+}
+
+.search input {
+  outline: none;
+  border: none;
+}
+
+.search input::placeholder {
+  color: #c8c8c8;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItem {
+  margin-right: 42px;
+}
+
+.menuItem.active {
+  padding-bottom: 7px;
+  border-bottom: 2px solid #000;
+}
+
+.basket {
+  margin-left: 5px;
+  margin-right: 25px;
+}
