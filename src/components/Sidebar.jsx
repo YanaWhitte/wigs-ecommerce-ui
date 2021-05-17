@@ -6,18 +6,15 @@ const Sidebar = () => {
     <nav>
       <img src={process.env.PUBLIC_URL + "/img/icons/logo.svg"} alt="logo" width="93" height="44" className={s.logo} />
       <h2 className={s.title}>Explore</h2>
-      <NavbarItem iconName={"new"} alt={"new"} linkName={"New In"} />
-      <NavbarItem iconName={"clothing"} alt={"clothing"} linkName={"Clothing"} />
-      <NavbarItem iconName={"shoes"} alt={"shoes"} linkName={"Shoes"} />
-      <NavbarItem iconName={"accessories"} alt={"accessories"} linkName={"Accessories"} />
-      <NavbarItem iconName={"activewear"} alt={"activewear"} linkName={"Activewear"} />
-      <NavbarItem iconName={"gifts"} alt={"gifts"} linkName={"Gifts & Living"} />
-      <NavbarItem iconName={"inspiration"} alt={"inspiration"} linkName={"Inspiration"} />
+      <NavbarItem classname={s.navItem} iconName={"new"} alt={"new"} linkName={"New In"} />
+      <NavbarItem classname={s.navItem} iconName={"clothing"} alt={"clothing"} linkName={"Clothing"} />
+      <NavbarItem classname={s.navItem} iconName={"shoes"} alt={"shoes"} linkName={"Shoes"} />
+      <NavbarItem classname={s.navItem} iconName={"accessories"} alt={"accessories"} linkName={"Accessories"} />
+      <NavbarItem classname={s.navItem} iconName={"activewear"} alt={"activewear"} linkName={"Activewear"} />
+      <NavbarItem classname={s.navItem} iconName={"gifts"} alt={"gifts"} linkName={"Gifts & Living"} />
+      <NavbarItem classname={s.navItem} iconName={"inspiration"} alt={"inspiration"} linkName={"Inspiration"} />
     </nav>
-    <div className={s.help}>
-      <img src={process.env.PUBLIC_URL + "/img/icons/help.svg"} alt="help" />
-      <a href="#">Help Center</a>
-    </div>
+    <NavbarItem classname={s.help} iconName={"help"} alt={"help"} linkName={"Help Center"} />
   </aside>
 }
 
