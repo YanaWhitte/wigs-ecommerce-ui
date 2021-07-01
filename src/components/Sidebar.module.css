@@ -1,10 +1,14 @@
 .sidebar {
-  padding: 51px 56px 59px 42px;
+  position: fixed;
   grid-area: s;
+}
+
+.navHolder {
+  padding: 51px 56px 59px 42px;
+  height: 89vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-color: rgb(255, 252, 240); */
 }
 
 .logo {
@@ -21,8 +25,25 @@
   margin-bottom: 25px;
 }
 
+.navItem:hover {
+  transform: translate(10px, 0px);
+  transition: all ease 0.3s;
+}
+
+.navItem:active,
+.help:active {
+  opacity: 0.6;
+  transition: all ease 0.3s;
+}
+
+.navItem:last-child {
+  margin-bottom: 0;
+}
+
 .navItem,
 .help {
+  transition: all ease 0.3s;
+  cursor: pointer;
   display: flex;
   align-items: center;
   font-size: 16px;
