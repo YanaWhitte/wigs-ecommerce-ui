@@ -5,6 +5,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  transition: all ease 0.3s;
+}
+
 p,
 h1,
 h2,

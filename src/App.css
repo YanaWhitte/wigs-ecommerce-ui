@@ -5,13 +5,32 @@ a {
 }
 
 .App {
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   grid-template-rows: [h] 143px;
-  grid-template-columns: [s] 252px;
+  grid-template-columns: [s] minmax(140px, 252px);
   grid-column-gap: 37px;
   grid-template-areas:
     "s h h h h"
     "s c c c c"
     "s c c c c";
+}
+
+@media screen and (max-width: 1199px) {
+  .App {
+    grid-column-gap: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    grid-column-gap: 0;
+    grid-template-columns: [s] minmax(100px, 252px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    grid-template-columns: [s] minmax(10px, 100px);
+  }
 }

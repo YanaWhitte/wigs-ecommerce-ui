@@ -101,7 +101,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #e9e5e2 url(./../photos/img-8.png) no-repeat;
+  background: #ede9e6 url(./../photos/img-8.png) no-repeat;
   background-size: cover;
 }
 
@@ -123,4 +123,155 @@
 .newInStoreCard p {
   font-size: 15px;
   margin: 0;
+}
+
+@media screen and (min-width: 2000px) {
+  .card:hover,
+  .vericalCard.scaled .card {
+    transform: scale(1.02);
+  }
+  .trendingCard h2,
+  .newInStoreCard h2 {
+    font-size: 40px;
+  }
+  .trendingCard p,
+  .newInStoreCard p {
+    font-size: 24px;
+  }
+  .discountCard {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .like {
+    top: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+  }
+  .vericalCard:hover .like {
+    transform: translate(10px, -10px);
+  }
+
+  .vericalCard .like:active {
+    transform: scale(0.8) translate(10px, -10px);
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+  .card:hover,
+  .vericalCard.scaled .card {
+    transform: scale(1.02);
+  }
+  .trendingCard h2,
+  .newInStoreCard h2 {
+    font-size: 35px;
+  }
+  .trendingCard p,
+  .newInStoreCard p {
+    font-size: 20px;
+  }
+  .discountCard {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .trendingCard h2,
+  .newInStoreCard h2 {
+    font-size: 21px;
+  }
+  .trendingCard p,
+  .newInStoreCard p {
+    font-size: 13px;
+  }
+  .discountCard {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .trendingCard h2,
+  .newInStoreCard h2 {
+    font-size: 19px;
+  }
+  .trendingCard p,
+  .newInStoreCard p {
+    font-size: 11px;
+  }
+  .discountCard {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .trendingCard h2,
+  .newInStoreCard h2 {
+    font-size: 19px;
+  }
+  .trendingCard p,
+  .newInStoreCard p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .trendingCard h2,
+  .newInStoreCard h2 {
+    font-size: 17px;
+  }
+  .trendingCard p,
+  .newInStoreCard p {
+    font-size: 10px;
+  }
+  .discountCard {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .like {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .vericalCard:hover .like {
+    transform: translate(5px, -5px);
+  }
+  .vericalCard .like:active {
+    transform: scale(0.8) translate(5px, -5px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+  .horizontalCard {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .discountCard {
+    background-position: 50%;
+  }
+  .summerCard {
+    background-position: 1%;
+  }
+  .trendingCard {
+    padding: 10px;
+    background-position: 53%;
+    align-items: start;
+  }
+  .newInStoreCard {
+    padding: 10px;
+    background-position: 140%;
+    align-items: flex-end;
+  }
 }
