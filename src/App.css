@@ -5,7 +5,6 @@ a {
 }
 
 .App {
-  /* height: 100vh; */
   display: grid;
   grid-template-rows: [h] 143px;
   grid-template-columns: [s] minmax(140px, 252px);
